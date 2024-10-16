@@ -12,7 +12,7 @@ interface PricingCardProps {
 function PricingCard ({ title, price, features, buttonText }:PricingCardProps) {
   return (
     <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 w-full h-80 md:h-96 transition-transform duration-300 hover:shadow-xl overflow-hidden">
-      <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">{title}</h3>
+      <h1 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">{title}</h1>
       <p className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 md:mb-6">{price}</p>
       <ul className="mb-8 md:mb-10 space-y-3 md:space-y-4 mx-4 md:mx-6 overflow-auto">
         {features.map((feature, index) => (

@@ -86,6 +86,7 @@ function TestimonialSlider() {
       </div>
 
       <button
+        aria-label='Previous testimonial'
         onClick={prevTestimonial}
         className="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-900 transition-all duration-300 ease-in-out"
         style={{ background: 'none', border: 'none' }}
@@ -93,6 +94,7 @@ function TestimonialSlider() {
         <ChevronLeft className="w-8 h-8" />
       </button>
       <button
+        aria-label='Next testimonial'
         onClick={nextTestimonial}
         className="absolute right-2 top-1/2 transform -translate-y-1/2 text-gray-600 hover:text-gray-900 transition-all duration-300 ease-in-out"
         style={{ background: 'none', border: 'none' }}

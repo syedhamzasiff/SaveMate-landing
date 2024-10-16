@@ -21,7 +21,6 @@ function HeroSection() {
             height={600} 
             priority={true} 
             sizes="(max-width: 640px) 80vw, (min-width: 641px) 50vw"
-            style={{ width: '100%', height: 'auto' }} 
           />
         </div>
       </div>

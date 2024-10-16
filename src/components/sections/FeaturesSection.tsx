@@ -62,7 +62,7 @@ function FeaturesSection() {
 
         <div className="flex-1 flex justify-center mb-8 md:mb-0">
           <Image 
-            src={currentImage || '/calender-image.png'} 
+            src={currentImage || '/images/calender-layout.png'} 
             alt="Mobile App Layout" 
             width={400} 
             height={800}

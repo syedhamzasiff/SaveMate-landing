@@ -17,9 +17,9 @@ function DownloadSection() {
         </div>
 
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
-          <h1 className="text-4xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">
             Get Started with SaveMate Today
-          </h1>
+          </h2>
           <p className="text-lg text-gray-600 mb-4">
             Download our app and take the first step towards financial freedom.
           </p>

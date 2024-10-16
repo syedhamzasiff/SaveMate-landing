@@ -13,7 +13,7 @@ function FeatureCard({ title, description, animationDelay, className }: FeatureC
       className={`p-4 sm:p-6 bg-white rounded-lg shadow-md ${className}`} 
       style={{ animationDelay: `${animationDelay}ms` }}
     >
-      <h3 className="text-lg sm:text-2xl font-bold text-gray-800 mb-1">{title}</h3>
+      <h1 className="text-lg sm:text-2xl font-bold text-gray-800 mb-1">{title}</h1>
       <p className="text-gray-600 text-xs sm:text-sm">{description}</p>
     </div>
   );

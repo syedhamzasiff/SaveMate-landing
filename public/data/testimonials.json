@@ -1,202 +1,107 @@
 [
   {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
+    "text": "SaveMate helped me take control of my finances like never before. I love how easy it is to use!",
+    "author": "Alex Johnson",
     "rating": 5
   },
   {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
+    "text": "Thanks to SaveMate, I've finally managed to stick to my budget. Highly recommend it!",
+    "author": "Maria Garcia",
     "rating": 5
   },
   {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
+    "text": "The budgeting tools are intuitive and have changed the way I manage my money.",
+    "author": "James Smith",
     "rating": 5
   },
   {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
+    "text": "SaveMate is a game changer! I can now track my expenses effortlessly.",
+    "author": "Emily Davis",
     "rating": 5
   },
   {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
+    "text": "I never thought budgeting could be this easy. SaveMate makes it fun!",
+    "author": "Michael Brown",
     "rating": 5
   },
   {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
+    "text": "The insights provided by SaveMate have really opened my eyes to my spending habits.",
+    "author": "Jessica Lee",
     "rating": 5
   },
   {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
+    "text": "I love the clean and simple interface. It makes managing my finances a breeze.",
+    "author": "David Wilson",
     "rating": 5
   },
   {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
+    "text": "SaveMate has empowered me to save more and spend wisely. Thank you!",
+    "author": "Sarah Martinez",
     "rating": 5
   },
   {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
+    "text": "Finally, an app that understands my budgeting needs! I'm a fan for life.",
+    "author": "Daniel Anderson",
     "rating": 5
   },
   {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
+    "text": "Using SaveMate has made my financial planning straightforward and stress-free.",
+    "author": "Laura Thomas",
     "rating": 5
   },
   {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
+    "text": "I appreciate the community aspect of SaveMate. It feels great to share tips with others!",
+    "author": "Christopher Jackson",
     "rating": 5
   },
   {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
+    "text": "I can't imagine managing my finances without SaveMate. It's essential for me.",
+    "author": "Nancy White",
     "rating": 5
   },
   {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
+    "text": "The reminders and alerts help me stay on track with my spending. Amazing app!",
+    "author": "Kevin Harris",
     "rating": 5
   },
   {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
+    "text": "SaveMate has simplified my financial life, and I feel more confident about my money.",
+    "author": "Patricia Clark",
     "rating": 5
   },
   {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
+    "text": "Highly effective app! It has made budgeting accessible and enjoyable.",
+    "author": "James Lewis",
     "rating": 5
   },
   {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
+    "text": "I've recommended SaveMate to all my friends. It's a must-have for anyone looking to budget!",
+    "author": "Laura Robinson",
     "rating": 5
   },
   {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
+    "text": "SaveMate is fantastic! I've saved more money in the last few months than ever before.",
+    "author": "Daniel Walker",
     "rating": 5
   },
   {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
+    "text": "I love the customizable features. SaveMate adapts to my unique budgeting style.",
+    "author": "Jessica Hall",
     "rating": 5
   },
   {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
+    "text": "This app is easy to navigate and offers everything I need for budgeting.",
+    "author": "Matthew Allen",
     "rating": 5
   },
   {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
+    "text": "I'm impressed with how quickly I can analyze my spending habits. Great tool!",
+    "author": "Kimberly Young",
     "rating": 5
   },
   {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
-    "rating": 5
-  },
-  {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
-    "rating": 5
-  },
-  {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
-    "rating": 5
-  },
-  {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
-    "rating": 5
-  },
-  {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
-    "rating": 5
-  },
-  {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
-    "rating": 5
-  },
-  {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
-    "rating": 5
-  },
-  {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
-    "rating": 5
-  },
-  {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
-    "rating": 5
-  },
-  {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
-    "rating": 5
-  },
-  {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
-    "rating": 5
-  },
-  {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
-    "rating": 5
-  },
-  {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
-    "rating": 5
-  },
-  {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
-    "rating": 5
-  },
-  {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
-    "rating": 5
-  },
-  {
-    "text": "This product has changed my life for the better!",
-    "author": "John Doe",
-    "rating": 5
-  },
-  {
-    "text": "I love using this tool. It has made my work so much easier.",
-    "author": "Jane Smith",
-    "rating": 5
-  },
-  {
-    "text": "A fantastic experience! Highly recommend to everyone.",
-    "author": "Alice Johnson",
-    "rating": 5
-  },
-  {
-    "text": "Great service and support. Will definitely use again!",
-    "author": "Bob Brown",
-    "rating": 5
-  },
-  {
-    "text": "This is an amazing product! I can't imagine my life without it.",
-    "author": "Charlie Black",
+    "text": "SaveMate makes it easy to set and achieve my financial goals. I'm so grateful!",
+    "author": "John King",
     "rating": 5
   }
 ]

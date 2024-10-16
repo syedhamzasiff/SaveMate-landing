@@ -3,7 +3,7 @@ import React from 'react';
 import StatItem from '../ui/StatItem';
 import CtaButton from '../ui/CtaButton';
 
-const CredibilitySection: React.FC = () => {
+function CredibilitySection() {
   return (
     <section className="py-16 flex items-center justify-center bg-gradient-to-b from-white to-gray-200">
   <div className="max-w-5xl mx-auto text-center space-y-12 px-4 sm:px-6 lg:px-8">
@@ -13,7 +13,7 @@ const CredibilitySection: React.FC = () => {
       <StatItem number="500,000" text="Daily Active Users" />
       <StatItem number="1 Million" text="App Downloads and Counting" />
     </div>
-    <CtaButton text="Join the Community" href="#cta" />
+    <CtaButton text="Join the Community" href="#download" />
   </div>
 </section>
   );

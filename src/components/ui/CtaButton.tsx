@@ -5,7 +5,7 @@ interface CTAProps {
   href: string;
 }
 
-const CtaButton: React.FC<CTAProps> = ({ text, href }) => {
+function CtaButton({ text, href }: CTAProps) {
   return (
     <a
       href={href}
@@ -14,6 +14,6 @@ const CtaButton: React.FC<CTAProps> = ({ text, href }) => {
       {text}
     </a>
   );
-};
+}
 
 export default CtaButton;

@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import React, { useState, useEffect } from 'react'
-import Link from 'next/link'
-import CtaButton from '../ui/CtaButton'
+import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
+import CtaButton from '../ui/CtaButton';
 
-const Navbar: React.FC = () => {
+function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           SaveMate
         </Link>
 
-        <div className="hidden md:flex space-x-8 text-gray-800">
+        <div className="hidden md:flex space-x-4 text-gray-800"> 
           <Link href="#features" className="hover:text-green-500 transition-colors">
             Features
           </Link>
@@ -40,14 +40,14 @@ const Navbar: React.FC = () => {
             Testimonials
           </Link>
         </div>
-        
+
         <CtaButton 
-          text='Save With Us'
-          href='#cta'
+          text='Join Us'
+          href='#download'
           />
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

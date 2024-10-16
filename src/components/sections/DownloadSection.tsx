@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function DownloadSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-green-200 to-green-50 flex items-center justify-center">
+    <section className="py-20 bg-gradient-to-r from-green-200 to-green-50 flex items-center justify-center" id='download'>
       <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl w-full px-8 space-y-10 lg:space-y-0 lg:space-x-10">
         
         <div className="flex-shrink-0">
@@ -24,14 +24,14 @@ function DownloadSection() {
             Download our app and take the first step towards financial freedom.
           </p>
   
-          <div className="flex space-x-4 mt-8 ">
+          <div className="flex space-x-4 mt-8 justify-center lg:ml-20">
             <a href="#playstore" className="flex items-center">
               <Image 
                 src='/images/playstore.png'
-                width={220} 
+                width={240} 
                 height={60}
                 alt='PlayStore Link'
-                className="hover:scale-105 transition-transform duration-200"
+                className="hover:scale-105 transition-transform duration-200 w-36 lg:w-56" 
               />
             </a>
             <a href="#appstore" className="flex items-center">
@@ -40,7 +40,7 @@ function DownloadSection() {
                 width={200}
                 height={60}
                 alt='AppStore Link'
-                className="hover:scale-105 transition-transform duration-200"
+                className="hover:scale-105 transition-transform duration-200 w-32 lg:w-52" 
               />
             </a>
           </div>

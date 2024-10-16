@@ -1,32 +1,87 @@
-'use client'; 
-import React from 'react';
-import Image from 'next/image';
-import FeatureCard from '../ui/FeatureCard'
+'use client';
 
-const FeaturesSection: React.FC = () => {
+import FeatureCard from "../ui/FeatureCard";
+import React, { useEffect, useState } from 'react';
+import Image from "next/image";
+
+interface Feature {
+  title: string;
+  description: string;
+  image: string;
+}
+
+function FeaturesSection() {
+  const [features, setFeatures] = useState<Feature[]>([]);
+  const [currentImage, setCurrentImage] = useState<string>(''); 
+
+  useEffect(() => {
+    const fetchFeatures = async () => {
+      const response = await fetch('/data/features.json');
+      const data = await response.json();
+      setFeatures(data);
+      if (data.length > 0) {
+        setCurrentImage(data[0].image);
+      }
+    };
+    fetchFeatures();
+  }, []);
+
+  const handleHover = (image: string) => {
+    setCurrentImage(image);
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gray-50">
-      <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col space-y-8 md:w-1/2">
-          <FeatureCard title="Track Your Expenses" />
-          <FeatureCard title="Set Budget Goals" />
-          <FeatureCard title="Get Insights" />
-          <FeatureCard title="Manage Multiple Accounts" />
+    <section className="min-h-screen bg-gradient-to-b from-gray-200 to-white py-20" id="features">
+      <div className="text-center mb-12">
+        <h1 className="text-3xl sm:text-5xl font-extrabold text-gray-800 leading-tight">
+          Why Choose SaveMate?
+        </h1>
+      </div>
+
+      <div className="flex flex-col md:flex-row items-center justify-between px-10">
+        <div className="flex-1 flex flex-col space-y-6 md:pr-10">
+          {features.slice(0, 4).map((feature, index) => (
+            <div 
+              key={feature.title}
+              onMouseEnter={() => handleHover(feature.image)}
+              className="hover:cursor-pointer"
+            >
+              <FeatureCard 
+                title={feature.title}
+                description={feature.description}
+                animationDelay={index * 150}
+                className="hover:bg-green-100 transition-colors duration-300"
+              />
+            </div>
+          ))}
         </div>
-        <div className="flex justify-center w-full md:w-1/2">
+
+        
+        <div className="flex-1 flex justify-center">
           <Image 
-            src="/images/app-layout.png" 
-            alt="Mobile App Display"
-            width={300} 
-            height={600} 
-            className="transition-transform transform hover:scale-105"
+            src={currentImage || '/calender-image.png'} 
+            alt="Mobile App Layout" 
+            width={400} 
+            height={800}
           />
         </div>
-        <div className="flex flex-col space-y-8 md:w-1/2">
-          <FeatureCard title="Receive Notifications" />
-          <FeatureCard title="Secure Your Data" />
-          <FeatureCard title="Customizable Reports" />
-          <FeatureCard title="Easy to Use Interface" />
+
+        
+        <div className="flex-1 flex flex-col space-y-6 md:pl-10">
+          {features.slice(4).map((feature, index) => (
+            <div 
+              key={feature.title}
+              onMouseEnter={() => handleHover(feature.image)}
+              className="hover:cursor-pointer"
+            >
+              <FeatureCard 
+                title={feature.title}
+                description={feature.description}
+                animationDelay={index * 150}
+                className="hover:bg-green-100 transition-colors duration-300"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

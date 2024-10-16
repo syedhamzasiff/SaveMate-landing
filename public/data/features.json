@@ -1,0 +1,43 @@
+[
+    {
+      "title": "Budget Planning",
+      "description": "Easily plan and manage your budget with our intuitive interface.",
+      "image": "/images/budget-layout.png"
+    },
+    {
+      "title": "Track Your Expenses",
+      "description": "Stay on top of your spending with detailed charts and reports.",
+      "image": "/images/chart-layout.png"
+    },
+    {
+      "title": "Set Financial Goals",
+      "description": "Define and achieve your savings goals with personalized planning.",
+      "image": "/images/calender-layout.png"
+    },
+    {
+      "title": "Simple Navigation",
+      "description": "Quickly access key features and insights with our easy navigation.",
+      "image": "/images/easy-access-layout.png"
+    },
+    {
+      "title": "Advanced Filtering",
+      "description": "Filter transactions and data to focus on what’s important.",
+      "image": "/images/filter-layout.png"
+    },
+    {
+      "title": "Detailed Reports",
+      "description": "View your financial data in comprehensive graphs and charts.",
+      "image": "/images/graph-layout.png"
+    },
+    {
+      "title": "Secure Photo Saving",
+      "description": "Save important financial documents securely in one place.",
+      "image": "/images/photosave-layout.png"
+    },
+    {
+      "title": "Detailed Reports",
+      "description": "View your financial data in comprehensive graphs and charts.",
+      "image": "/images/graph-layout.png"
+    }
+  ]
+  

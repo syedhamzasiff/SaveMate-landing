@@ -11,14 +11,16 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
-        <HeroSection />
-        <CredibilitySection />
-        <FeaturesSection />
-        <TestimonialsSection />
-        <PricingSection />
-        <DownloadSection />
-      </main>
+      <div>
+        <main>
+          <HeroSection />
+          <CredibilitySection />
+          <FeaturesSection />
+          <TestimonialsSection />
+          <PricingSection />
+          <DownloadSection />
+        </main>
+      </div>
       <Footer />
     </>
   );

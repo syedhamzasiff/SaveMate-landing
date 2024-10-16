@@ -1,13 +1,15 @@
 import React from 'react';
+import TestimonialSlider from '../ui/TestimonialSlider';
 
-function TestimonialsSection() {
+const TestimonialSection: React.FC = () => {
   return (
-    <section className="py-20 bg-white" id="testimonials">
-      <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-4xl font-bold text-gray-800 mb-12">What Our Users Say</h2>
-      </div>
+    <section className="py-10 flex flex-col items-center justify-center h-screen bg-gradient-to-b from-gray-50 to-gray-400" id="testimonials">
+      <h1 className="text-4xl font-bold text-gray-800 mb-6">Hear from Our Community</h1>
+      <h2 className="text-2xl text-gray-800 mb-8">Real stories from real users who transformed their finances with SaveMate.</h2>
+      <TestimonialSlider />
     </section>
   );
-}
+  
+};
 
-export default TestimonialsSection;
+export default TestimonialSection;

@@ -1,16 +1,24 @@
-'use client'; 
 import React from 'react';
 
-type TestimonialCardProps = {
+interface TestimonialCardProps {
   text: string;
   author: string;
-};
+  rating: number;
+}
 
-const TestimonialCard: React.FC<TestimonialCardProps> = ({ text, author }) => {
+const TestimonialCard: React.FC<TestimonialCardProps> = ({ text, author, rating }) => {
   return (
-    <div className="bg-gray-100 p-6 rounded-lg shadow-md">
-      <p className="text-gray-600">{`"${text}"`}</p>
-      <p className="mt-4 font-semibold text-gray-800">- {author}</p>
+    <div className="flex flex-col justify-between rounded-xl bg-white shadow-lg ring-1 ring-gray-300 transition-transform transform hover:scale-105 p-6 w-72 h-72">
+      <blockquote className="text-lg leading-7 tracking-tight text-gray-700 italic flex-grow">
+        <p>"{text}"</p>
+      </blockquote>
+      <div className="mt-4">
+        <p className="font-bold text-gray-800 text-md">{author}</p>
+        <div className="text-yellow-500 mt-1">
+          {'★'.repeat(rating)}{' '}
+          {'☆'.repeat(5 - rating)} 
+        </div>
+      </div>
     </div>
   );
 };

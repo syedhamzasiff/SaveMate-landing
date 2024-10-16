@@ -12,7 +12,8 @@ interface Testimonial {
 function TestimonialSlider() {
   const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     const fetchTestimonials = async () => {
       const response = await fetch('/data/testimonials.json');
@@ -23,7 +24,6 @@ function TestimonialSlider() {
     fetchTestimonials();
   }, []);
 
-  
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -31,6 +31,18 @@ function TestimonialSlider() {
 
     return () => clearInterval(intervalId);
   }, [testimonials.length]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const nextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -42,30 +54,35 @@ function TestimonialSlider() {
     );
   };
 
-  
   const displayedTestimonials = testimonials.length
     ? [testimonials[currentIndex]]
-    : []; 
+    : [];
 
-  
   const desktopDisplayedTestimonials = [
-    testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length], // Previous
-    testimonials[currentIndex], // Current
-    testimonials[(currentIndex + 1) % testimonials.length], // Next
+    testimonials[(currentIndex - 1 + testimonials.length) % testimonials.length],
+    testimonials[currentIndex],
+    testimonials[(currentIndex + 1) % testimonials.length],
   ];
 
   return (
     <div className="relative w-full max-w-6xl px-4 py-8 mx-auto">
       <div className="flex justify-center items-center space-x-8">
-        {(window.innerWidth < 768 ? displayedTestimonials : desktopDisplayedTestimonials).map((testimonial, index) => (
-          <div key={index} className={`px-2 flex-none transition-transform duration-300 ease-in-out ${index === 1 ? 'scale-110' : ''}`}>
-            <TestimonialCard
-              text={testimonial?.text || ''}
-              author={testimonial?.author || ''}
-              rating={testimonial?.rating || 0}
-            />
-          </div>
-        ))}
+        {(isMobile ? displayedTestimonials : desktopDisplayedTestimonials).map(
+          (testimonial, index) => (
+            <div
+              key={index}
+              className={`px-2 flex-none transition-transform duration-300 ease-in-out ${
+                index === 1 ? 'scale-110' : ''
+              }`}
+            >
+              <TestimonialCard
+                text={testimonial?.text || ''}
+                author={testimonial?.author || ''}
+                rating={testimonial?.rating || 0}
+              />
+            </div>
+          )
+        )}
       </div>
 
       <button
@@ -84,6 +101,6 @@ function TestimonialSlider() {
       </button>
     </div>
   );
-};
+}
 
 export default TestimonialSlider;
